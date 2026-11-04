@@ -31,4 +31,4 @@ npm run preview
 
 - **GitHub**: [github.com/PriyaPandey27](https://github.com/PriyaPandey27)
 - **LinkedIn**: [linkedin.com/in/priya-pandey-840561280](https://www.linkedin.com/in/priya-pandey-840561280/)
-- **Email**: [prrii890@gmail.com](mailto:prrii890@gmail.com)
+- **Email**: [mversepriya@gmail.com](mailto:mversepriya@gmail.com)
