@@ -22,29 +22,6 @@ const resumeData = {
   school: 'Jawaharlal Nehru School Habibganj, Bhopal (Class XII: 87%)',
 };
 
-const uiUxSpecialization = [
-  {
-    title: 'Product & UI Design',
-    icon: Layout,
-    desc: 'Deep interest in user journeys, visual hierarchy, typography, wireframing, and creating responsive design systems.',
-  },
-  {
-    title: 'Prototyping & Tools',
-    icon: Figma,
-    desc: 'Hands-on prototyping with Figma and Adobe XD, component libraries, design tokens, and interactive mockups.',
-  },
-  {
-    title: 'Design-to-Code Implementation',
-    icon: Palette,
-    desc: 'Translating Figma prototypes into pixel-perfect React & Tailwind CSS components with micro-interactions.',
-  },
-  {
-    title: 'Accessibility & UX Testing',
-    icon: ShieldCheck,
-    desc: 'WCAG compliance, keyboard navigation, semantic HTML, and user-centric feedback loops across devices.',
-  },
-];
-
 const skillCategories = [
   {
     title: 'UI/UX & Product Design',
@@ -268,23 +245,16 @@ function App() {
               <ellipse cx="510" cy="328" rx="6" ry="4" fill="#001C55" />
 
               {/* Character sitting on desk */}
-              {/* Hair */}
               <path d="M230 145 C230 110, 275 110, 275 145 C275 160, 265 175, 230 170 Z" fill="#001C55" />
-              {/* Face */}
               <circle cx="250" cy="155" r="18" fill="#FFC9BA" />
-              {/* Jacket / Torso */}
               <path d="M225 185 L280 185 L290 320 L215 320 Z" fill="#001C55" />
-              {/* Inner Shirt */}
               <polygon points="245,185 260,185 265,270 240,270" fill="#0E6BA8" />
-              {/* Arms */}
               <path d="M225 190 Q210 240 220 280" stroke="#001C55" strokeWidth="18" strokeLinecap="round" />
               <path d="M280 190 Q295 240 285 280" stroke="#001C55" strokeWidth="18" strokeLinecap="round" />
               <circle cx="220" cy="285" r="8" fill="#FFC9BA" />
               <circle cx="285" cy="285" r="8" fill="#FFC9BA" />
-              {/* Legs */}
               <rect x="230" y="320" width="18" height="120" rx="6" fill="#001C55" />
               <rect x="255" y="320" width="18" height="120" rx="6" fill="#001C55" />
-              {/* Shoes */}
               <ellipse cx="236" cy="445" rx="14" ry="7" fill="#00072D" />
               <ellipse cx="266" cy="445" rx="14" ry="7" fill="#00072D" />
             </svg>
@@ -292,26 +262,139 @@ function App() {
         </div>
       </section>
 
-      {/* UI/UX & Product Design Specialization */}
+      {/* UI/UX Design Section matching user screenshot */}
       <section className="content-section light-section" id="uiux">
         <div className="section-container">
-          <div className="section-title-wrap">
-            <h2 className="section-main-title">UI/UX & Product Design</h2>
-            <p className="section-subtitle">
-              Crafting accessible, human-centric interfaces from wireframes and prototypes to production code.
-            </p>
-          </div>
+          <div className="uiux-showcase-row">
+            {/* Left side: Illustration */}
+            <div className="uiux-showcase-illustration">
+              <svg
+                viewBox="0 0 520 380"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="uiux-vector-art"
+              >
+                {/* Background soft blob */}
+                <path
+                  d="M40 180 C30 80, 160 30, 260 40 C370 50, 490 80, 480 200 C470 320, 360 350, 240 350 C120 350, 50 280, 40 180 Z"
+                  fill="#D6EEF8"
+                  opacity="0.85"
+                />
+                {/* Window pane lines in backdrop */}
+                <line x1="120" y1="50" x2="120" y2="280" stroke="#C3E4F3" strokeWidth="2" strokeDasharray="4 4" />
+                <line x1="240" y1="50" x2="240" y2="280" stroke="#C3E4F3" strokeWidth="2" strokeDasharray="4 4" />
+                <line x1="360" y1="50" x2="360" y2="280" stroke="#C3E4F3" strokeWidth="2" strokeDasharray="4 4" />
+                <line x1="60" y1="140" x2="440" y2="140" stroke="#C3E4F3" strokeWidth="2" strokeDasharray="4 4" />
 
-          <div className="uiux-grid">
-            {uiUxSpecialization.map((item, idx) => (
-              <div key={idx} className="uiux-card">
-                <div className="uiux-icon-box">
-                  <item.icon size={26} />
+                {/* Floating Diamond Icon (Sketch/Design) */}
+                <g transform="translate(110, 60)">
+                  <polygon points="35,0 70,25 35,70 0,25" fill="#FDB300" />
+                  <polygon points="35,0 70,25 35,25" fill="#FFE175" opacity="0.8" />
+                  <polygon points="0,25 35,0 35,25" fill="#FFA500" opacity="0.6" />
+                  <polygon points="0,25 70,25 35,70" fill="#E69500" opacity="0.9" />
+                </g>
+
+                {/* Floating XD Icon */}
+                <g transform="translate(380, 60)">
+                  <rect width="64" height="64" rx="8" fill="#470137" stroke="#FF61F6" strokeWidth="3" />
+                  <text x="14" y="44" fontFamily="'Manrope', sans-serif" fontWeight="800" fontSize="28" fill="#FF61F6">Xd</text>
+                </g>
+
+                {/* Desk Left (Male Designer) */}
+                <rect x="60" y="235" width="145" height="12" rx="3" fill="#F8C8C4" />
+                <line x1="75" y1="247" x2="75" y2="330" stroke="#E29D96" strokeWidth="4" />
+                <line x1="185" y1="247" x2="185" y2="330" stroke="#E29D96" strokeWidth="4" />
+                {/* Laptop on left desk */}
+                <polygon points="78,235 125,235 120,205 88,205" fill="#001C55" />
+                <rect x="75" y="233" width="55" height="4" rx="2" fill="#9FB3C8" />
+                <polygon points="82,233 118,233 114,208 92,208" fill="#0099FF" />
+                {/* Person Left */}
+                <circle cx="160" cy="180" r="16" fill="#F8B195" />
+                <path d="M148 174 C148 160, 172 160, 172 174 Z" fill="#001C55" />
+                <path d="M142 200 L180 200 L175 270 L145 270 Z" fill="#001C55" />
+                <path d="M145 205 Q125 220 115 228" stroke="#001C55" strokeWidth="10" strokeLinecap="round" />
+                <circle cx="112" cy="230" r="6" fill="#F8B195" />
+                <path d="M175 240 Q160 260 145 300" stroke="#001C55" strokeWidth="12" strokeLinecap="round" />
+                {/* Chair Left */}
+                <path d="M185 240 Q200 240 195 285" stroke="#334E68" strokeWidth="10" strokeLinecap="round" />
+
+                {/* Desk Right (Female Designer) */}
+                <rect x="270" y="240" width="180" height="15" rx="3" fill="#FFFFFF" stroke="#E29D96" strokeWidth="2" />
+                <rect x="340" y="248" width="105" height="24" rx="2" fill="#F8C8C4" />
+                <line x1="365" y1="260" x2="425" y2="260" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" />
+                <line x1="285" y1="255" x2="285" y2="330" stroke="#E29D96" strokeWidth="4" />
+                <line x1="435" y1="255" x2="435" y2="330" stroke="#E29D96" strokeWidth="4" />
+                {/* Desktop Monitor on right desk */}
+                <rect x="360" y="175" width="70" height="52" rx="4" fill="#001C55" />
+                <rect x="364" y="179" width="62" height="44" rx="2" fill="#0077B5" />
+                <path d="M390 227 L385 240 L405 240 L400 227 Z" fill="#001C55" />
+                {/* Person Right */}
+                <circle cx="320" cy="180" r="15" fill="#F8B195" />
+                {/* Ponytail Hair */}
+                <path d="M308 175 C308 162, 332 162, 332 175 Z" fill="#001C55" />
+                <path d="M308 175 Q295 190 298 220" stroke="#001C55" strokeWidth="8" strokeLinecap="round" />
+                {/* Blouse */}
+                <path d="M305 198 L338 198 L330 258 L308 258 Z" fill="#A86B52" />
+                {/* Arm typing */}
+                <path d="M312 205 Q335 218 348 238" stroke="#A86B52" strokeWidth="9" strokeLinecap="round" />
+                <circle cx="350" cy="240" r="5" fill="#F8B195" />
+                {/* Skirt */}
+                <rect x="296" y="258" width="46" height="32" rx="4" fill="#001C55" />
+                {/* Legs */}
+                <rect x="312" y="290" width="12" height="42" fill="#F8B195" />
+                <rect x="330" y="290" width="12" height="42" fill="#F8B195" />
+                {/* Chair Right */}
+                <path d="M292 245 Q285 245 288 310" stroke="#334E68" strokeWidth="8" strokeLinecap="round" />
+              </svg>
+            </div>
+
+            {/* Right side: Title, tool badges, bullet points */}
+            <div className="uiux-showcase-content">
+              <h2 className="uiux-showcase-title">UI/UX Design</h2>
+
+              {/* Tool Badges Row matching image: XD, Figma, AI, Inkscape */}
+              <div className="uiux-tools-row">
+                <div className="tool-badge-box xd-tool" title="Adobe XD">
+                  <span>Xd</span>
                 </div>
-                <h3>{item.title}</h3>
-                <p>{item.desc}</p>
+
+                <div className="tool-badge-box figma-tool" title="Figma">
+                  <svg viewBox="0 0 38 57" width="24" height="36" fill="none">
+                    <path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/>
+                    <path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/>
+                    <path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/>
+                    <path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/>
+                    <path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/>
+                  </svg>
+                </div>
+
+                <div className="tool-badge-box ai-tool" title="Adobe Illustrator">
+                  <span>Ai</span>
+                </div>
+
+                <div className="tool-badge-box inkscape-tool" title="Inkscape / Vector Design">
+                  <svg viewBox="0 0 24 24" width="30" height="30" fill="#111827">
+                    <path d="M14.54 1.57a3.02 3.02 0 0 0-2.14.88L2.45 12.4a3.03 3.03 0 0 0-.88 2.14c0 .8.31 1.57.88 2.14l4.5 4.5a3.03 3.03 0 0 0 2.14.88c.8 0 1.57-.31 2.14-.88l9.95-9.95a3.03 3.03 0 0 0 .88-2.14 3.03 3.03 0 0 0-.88-2.14L16.68 2.45a3.02 3.02 0 0 0-2.14-.88zM6.6 15.6l2.1-2.1 1.8 1.8-2.1 2.1-1.8-1.8zm11.7-8.3l-5.3 5.3-1.8-1.8 5.3-5.3 1.8 1.8z"/>
+                  </svg>
+                </div>
               </div>
-            ))}
+
+              {/* Lightning Bullet points matching image */}
+              <div className="uiux-lightning-list">
+                <div className="uiux-lightning-item">
+                  <span className="lightning-symbol">⚡</span>
+                  <p>Designing highly attractive user interface for mobile and web applications</p>
+                </div>
+                <div className="uiux-lightning-item">
+                  <span className="lightning-symbol">⚡</span>
+                  <p>Customizing logo designs, design tokens, and building visual design systems from scratch</p>
+                </div>
+                <div className="uiux-lightning-item">
+                  <span className="lightning-symbol">⚡</span>
+                  <p>Creating the flow of application functionalities, interactive Figma prototypes, and wireframes to optimize user experience</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Detailed Skill Matrix */}
